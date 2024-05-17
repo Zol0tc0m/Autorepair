@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Автомастерская</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Автомастерская</h1>
+    <form id="add-form">
+      <label for="name">Марка и модель автомобиля:</label>
+      <input type="text" id="name">
+      <br><br>
+      <label for="date">Год выпуска:</label>
+      <input type="text" id="date">
+      <br><br>
+      <label for="problem">Проблема:</label>
+      <input type="text" id="problem">
+      <br><br>
+      <label for="status">Статус:</label>
+      <input type="radio" id="done" name="status" value="done" checked="">
+      <label for="done">Автомобиль отремонтирован и готов к выдаче клиенту.</label>
+      <input type="radio" id="repairing" name="status" value="repairing">
+      <label for="repairing">Ремонт автомобиля не завершен.</label>
+      <input type="submit" value="Добавить"><br>
+    </form>
+    <br><br><br><br>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Марка и модель автомобиля</th>
+          <th>Год выпуска</th>
+          <th>Проблема</th>
+          <th>Статус</th>
+        </tr>
+      </thead>
+       <tbody></tbody>
+     </table>
+     <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
